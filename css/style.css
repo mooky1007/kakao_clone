@@ -1,68 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
-@import "/css/reset.css";
-@import "/css/variable.css";
-@import "/css/stauts-bar.css";
-@import "/css/btn.css";
+@import "reset.css";
+@import "variable.css";
 
-* {
+/* Components */
+@import "components/stauts-bar.css";
+@import "components/btn.css";
+@import "components/nav.css";
+@import "components/screen-header.css";
+
+/* Screens */
+@import "screens/login.css";
+
+body {
   font-family: "Open Sans", sans-serif;
-}
-
-.welcome-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 80px 0 60px;
-}
-
-.welcome-header__title {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 30px;
-  color: var(--black);
-}
-
-.welcome-header__text {
-  text-align: center;
-  line-height: 1.6;
-  color: var(--gray);
-}
-
-.login-form {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  gap: 20px;
-  text-align: center;
-}
-
-.login-form input[type="text"],
-.login-form input[type="password"] {
-  padding: 5px 5px 10px;
-  font-size: 16px;
-  border: 0;
-  border-bottom: 2px solid var(--light-gray);
-  transition: border-bottom, 0.2s ease-in-out;
-}
-
-.login-form input[type="text"]:focus,
-.login-form input[type="password"]:focus {
-  border-bottom: 2px solid var(--yellow);
-}
-
-.login-form input::placeholder {
-  color: var(--light-gray);
-}
-
-.login-form input[type="submit"] {
-  margin-top: 30px;
-}
-
-.login-form a {
-  color: var(black);
-  margin-top: 10px;
-}
-
-.login-form a:visited {
-  color: var(--light-gray);
 }

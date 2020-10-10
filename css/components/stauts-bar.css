@@ -17,6 +17,10 @@
   justify-content: flex-start;
 }
 
+.status-bar__column:first-child i {
+  font-size: 12px;
+}
+
 .status-bar__column:nth-child(2) {
   justify-content: center;
 }
