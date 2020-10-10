@@ -1,62 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import "/css/reset.css";
+@import "/css/variable.css";
+@import "/css/stauts-bar.css";
+@import "/css/btn.css";
 
 * {
   font-family: "Open Sans", sans-serif;
-}
-
-.status-bar {
-  display: flex;
-  padding: 5px;
-  justify-content: space-between;
-  font-weight: 700;
-  font-size: 14px;
-}
-
-.status-bar__column {
-  display: flex;
-  gap: 6px;
-  align-items: center;
-  width: 33%;
-}
-
-.status-bar__column:first-child {
-  justify-content: flex-start;
-}
-
-.status-bar__column:nth-child(2) {
-  justify-content: center;
-}
-
-.status-bar__column:last-child {
-  justify-content: flex-end;
-}
-
-.status-bar__column:last-child i:last-child {
-  font-size: 12px;
 }
 
 .welcome-header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 80px 0 60px;
 }
 
 .welcome-header__title {
   font-size: 26px;
   font-weight: 700;
-  margin: 30px 0;
+  margin-bottom: 30px;
+  color: var(--black);
 }
 
 .welcome-header__text {
   text-align: center;
-  margin: 20px 0;
   line-height: 1.6;
+  color: var(--gray);
 }
 
 .login-form {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  gap: 10px;
+  gap: 20px;
   text-align: center;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  padding: 5px 5px 10px;
+  font-size: 16px;
+  border: 0;
+  border-bottom: 2px solid var(--light-gray);
+  transition: border-bottom, 0.2s ease-in-out;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+  border-bottom: 2px solid var(--yellow);
+}
+
+.login-form input::placeholder {
+  color: var(--light-gray);
+}
+
+.login-form input[type="submit"] {
+  margin-top: 30px;
+}
+
+.login-form a {
+  color: var(black);
+  margin-top: 10px;
+}
+
+.login-form a:visited {
+  color: var(--light-gray);
 }
