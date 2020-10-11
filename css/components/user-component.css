@@ -10,6 +10,7 @@
   justify-content: flex-end;
   font-size: 12px;
   gap: 5px;
+  padding: 0 10px;
   color: var(--gray);
 }
 
@@ -42,18 +43,23 @@
 }
 
 .user_component__desc {
+  display: flex;
+  align-content: center;
+  gap: 5px;
   font-size: 12px;
+  margin-top: 5px;
   color: var(--gray);
+}
+
+.user_component__desc i {
+  color: tomato;
 }
 
 .user_component__right {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   gap: 5px;
-}
-
-.user_component__time {
 }
 
 .user_component__note {
