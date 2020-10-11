@@ -7,10 +7,16 @@
 @import "components/btn.css";
 @import "components/nav.css";
 @import "components/screen-header.css";
+@import "components/user-component.css";
 
 /* Screens */
 @import "screens/login.css";
+@import "screens/friends.css";
 
 body {
   font-family: "Open Sans", sans-serif;
+}
+
+.main_screen {
+  padding: 20px;
 }
