@@ -1,3 +1,7 @@
+.user_component {
+  margin-bottom: 20px;
+}
+
 .user_component,
 .user_component__column {
   display: flex;
