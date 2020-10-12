@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome KakaoTalk!</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/e4e94b66e3.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div class="status-bar">
-        <div class="status-bar__column">
-            <span>KT Service</span>
-            <i class="fas fa-wifi"></i>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Welcome KakaoTalk!</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="https://kit.fontawesome.com/e4e94b66e3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="status-bar">
+            <div class="status-bar__column">
+                <span>KT Service</span>
+                <i class="fas fa-wifi"></i>
+            </div>
+            <div class="status-bar__column">
+                <span>4:44</span>
+            </div>
+            <div class="status-bar__column">
+                <span>34%</span>
+                <i class="fas fa-battery-quarter"></i>
+                <i class="fas fa-bolt"></i>
+            </div>
         </div>
-        <div class="status-bar__column">
-            <span>4:44</span>
+        <header class="welcome-header">
+            <h1 class="welcome-header__title">Welcome to KaKaoTalk</h1>
+            <p class="welcome-header__text">If you have a kakao Account,<br />log in with your email or phone number.</p>
+        </header>
+        <form action="friends.html" method="GET" class="login-form">
+            <input required name="username" type="text" placeholder="Email or phone number" />
+            <input required name="password" type="password" placeholder="Password" />
+            <input class="btn btn-yellow" type="submit" value="Log In" />
+            <input class="btn" type="button" value="Sign In" />
+            <a href="#">Find kakao account or password</a>
+        </form>
+        <div class="splash-view">
+            <i class="fas fa-comment" aria-hidden="true"></i>
         </div>
-        <div class="status-bar__column">
-            <span>34%</span>
-            <i class="fas fa-battery-quarter"></i>
-            <i class="fas fa-bolt"></i>
-        </div>
-    </div>
-    <header class="welcome-header">
-        <h1 class="welcome-header__title">Welcome to KaKaoTalk</h1>
-        <p class="welcome-header__text">If you have a kakao Account,<br />log in with your email or phone number.</p>
-    </header>
-    <form action="friends.html" method="GET" class="login-form">
-        <input required name="username" type="text" placeholder="Email or phone number"/>
-        <input required name="password" type="password" placeholder="Password" />
-        <input class="btn btn-yellow" type="submit" value="Log In"/>
-        <input class="btn" type="button" value="Sign In"/>
-        <a href="#">Find kakao account or password</a>
-    </form>
-</body>
+    </body>
 </html>
