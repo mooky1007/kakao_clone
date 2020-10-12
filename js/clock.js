@@ -4,16 +4,8 @@ function clock() {
         let date = new Date();
         const hours = date.getHours();
         const min = date.getMinutes();
-        clock.innerHTML = `${addZero(hours)}:${addZero(min)}`;
+        clock.innerHTML = `${hours < 10 ? `0${hours}` : hours}:${min < 10 ? `0${min}` : min}`;
     }, 1000);
-
-    function addZero(timeNum) {
-        if (timeNum < 10) {
-            return `0${timeNum}`;
-        } else {
-            return `${timeNum}`;
-        }
-    }
 }
 
 clock();
