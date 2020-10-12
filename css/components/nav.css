@@ -3,6 +3,7 @@
     bottom: 0;
     width: 100%;
     background: var(--light-gray);
+    min-width: 320px;
 }
 
 .bottom-nav__ul {
