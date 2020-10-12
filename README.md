@@ -6,11 +6,11 @@
 
 ## To do list
 
-- [x] 01.png
-- [x] 02.png
-- [x] 03.png
-- [x] 04.png
-- [x] 05.png
-- [x] 06.png
-- [ ] 07.png
-- [ ] 08.png
+-   [x] 01.png
+-   [x] 02.png
+-   [x] 03.png
+-   [x] 04.png
+-   [x] 05.png
+-   [x] 06.png
+-   [x] 07.png
+-   [ ] 08.png

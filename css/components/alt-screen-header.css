@@ -11,8 +11,10 @@
 .alt-screen-header-column:nth-child(2) h1 {
     font-size: 30px;
     font-weight: 600;
+    text-align: center;
 }
 .alt-screen-header-column:last-child {
     display: flex;
     justify-content: flex-end;
+    gap: 20px;
 }

@@ -1,0 +1,5 @@
+.chat_screen,
+.chat_screen .status-bar,
+.chat_screen .alt-screen-header {
+    background: rgb(179, 200, 216);
+}
