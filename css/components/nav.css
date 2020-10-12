@@ -1,39 +1,39 @@
 .bottom-nav {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background: var(--light-gray);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: var(--light-gray);
 }
 
 .bottom-nav__ul {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .bottom-nav__li {
-  width: 25%;
-  padding: 20px 0;
-  text-align: center;
+    width: 25%;
+    padding: 20px 0;
+    text-align: center;
 }
 
 .bottom-nav__a {
-  color: var(--black);
-  opacity: 0.7;
-  position: relative;
+    color: var(--black);
+    opacity: 0.7;
+    position: relative;
 }
 
 .bottom-nav__note {
-  position: absolute;
-  color: #fff;
-  background: tomato;
-  border-radius: 50%;
-  width: 15px;
-  height: 15px;
-  font-size: 12px;
-  font-weight: 700;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: -5px;
-  right: -5px;
+    position: absolute;
+    color: #fff;
+    background: tomato;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -5px;
+    right: -5px;
 }

@@ -1,34 +1,40 @@
 .status-bar {
-  display: flex;
-  padding: 5px;
-  justify-content: space-between;
-  font-weight: 700;
-  font-size: 14px;
+    position: sticky;
+    background: #ffffff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 14px;
+    box-sizing: border-box;
 }
 
 .status-bar__column {
-  display: flex;
-  gap: 6px;
-  align-items: center;
-  width: 33%;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    width: 33%;
 }
 
 .status-bar__column:first-child {
-  justify-content: flex-start;
+    justify-content: flex-start;
 }
 
 .status-bar__column:first-child i {
-  font-size: 12px;
+    font-size: 12px;
 }
 
 .status-bar__column:nth-child(2) {
-  justify-content: center;
+    justify-content: center;
 }
 
 .status-bar__column:last-child {
-  justify-content: flex-end;
+    justify-content: flex-end;
 }
 
 .status-bar__column:last-child i:last-child {
-  font-size: 12px;
+    font-size: 12px;
 }

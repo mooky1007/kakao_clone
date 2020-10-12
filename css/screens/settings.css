@@ -1,0 +1,42 @@
+.settings-list:last-child .settings-list__item:last-child {
+    border-bottom: 0;
+}
+
+.settings-list__item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f6f6f6;
+    padding: 15px 0;
+}
+
+.settings-list__item:last-child {
+    padding-bottom: 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.settings-list__column {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.settings-list__column i {
+    width: 25px;
+    padding: 5px;
+    box-sizing: border-box;
+    color: var(--gray);
+    font-size: 14px;
+}
+
+.settings-list__column span {
+    color: var(--black);
+    font-weight: 600;
+}
+
+.settings-list__column:last-child span {
+    color: var(--gray);
+    font-size: 14px;
+    font-weight: 300;
+    padding-right: 5px;
+}

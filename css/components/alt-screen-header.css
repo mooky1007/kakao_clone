@@ -1,0 +1,18 @@
+.alt-screen-header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+
+.alt-screen-header-column {
+    width: 33%;
+}
+.alt-screen-header-column:nth-child(2) h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+.alt-screen-header-column:last-child {
+    display: flex;
+    justify-content: flex-end;
+}
