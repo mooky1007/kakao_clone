@@ -1,3 +1,7 @@
+.chat_screen {
+    overflow-x: hidden;
+}
+
 .chat_screen,
 .chat_screen .status-bar,
 .chat_screen .alt-screen-header {
@@ -107,7 +111,10 @@
     margin-left: auto;
     animation: rightin 0.2s ease-in-out forwards;
     opacity: 0;
-    animation-delay: 0.8s;
+}
+
+.chat-msg--right-first {
+    animation-delay: 0.6s;
 }
 
 .chat-msg--right .chat__content {

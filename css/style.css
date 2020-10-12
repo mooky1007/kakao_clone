@@ -19,6 +19,8 @@
 @import "screens/settings.css";
 @import "screens/chat.css";
 @import "screens/splash.css";
+@import "screens/media_query.css";
+
 body {
     font-family: "Open Sans", sans-serif;
 }
