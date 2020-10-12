@@ -3,3 +3,131 @@
 .chat_screen .alt-screen-header {
     background: rgb(179, 200, 216);
 }
+
+.chat_screen {
+    height: 300vh;
+}
+
+.chat_screen .alt-screen-header {
+    position: sticky;
+    top: 24px;
+    z-index: 999;
+}
+
+.chat__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.chat__time {
+    font-size: 14px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.chat-msg {
+    margin: 10px 0;
+    display: flex;
+    margin-right: auto;
+    gap: 10px;
+}
+
+.chat-msg__column:first-child img {
+    width: 45px;
+    height: 45px;
+    border-radius: 45%;
+}
+
+.chat-msg__column:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chat__sender,
+.chat__timestamp {
+    opacity: 0.6;
+    font-size: 14px;
+}
+
+.chat-msg__text {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.chat__content {
+    background: #fff;
+    padding: 10px;
+    border-radius: 0 10px 10px 10px;
+}
+
+.chat-msg--right {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.chat-msg--right .chat__content {
+    background: var(--yellow);
+    border-radius: 10px 0 10px 10px;
+}
+
+.chat-msg--right .chat-msg__text {
+    flex-direction: row-reverse;
+}
+
+.chat-input {
+    position: fixed;
+    background: #eee;
+    padding: 5px 15px 5px 5px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    box-sizing: border-box;
+}
+
+.chat-input__options-btn {
+    color: var(--gray);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.chat-input__options-btn i {
+    font-size: 28px;
+}
+
+.chat-input input {
+    width: 100%;
+    background: #e1e1e1;
+    border: 1px solid var(--gray);
+    border-radius: 50px;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: var(--black);
+}
+
+.chat-input > i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 60px;
+    font-size: 24px;
+    color: var(--gray);
+}
+
+.chat-input > i:last-child {
+    color: var(--black);
+    background: var(--yellow);
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 14px;
+    right: 20px;
+}
