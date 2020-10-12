@@ -22,14 +22,18 @@
 @import "screens/media_query.css";
 
 html {
-    min-width: 320px;
-    overflow-x: hidden;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .main_screen {
-    padding: 20px 20px 60px 20px;
+  padding: 20px 20px 60px 20px;
 }
