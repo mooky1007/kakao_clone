@@ -127,6 +127,7 @@
 }
 
 .chat-input {
+    height: 58px;
     position: fixed;
     background: #eee;
     padding: 5px 15px 5px 5px;
@@ -143,6 +144,7 @@
     color: var(--gray);
     padding: 10px;
     box-sizing: border-box;
+    order: 0;
 }
 
 .chat-input__options-btn i {
@@ -150,6 +152,7 @@
 }
 
 .chat-input input {
+    transition: all 0.2s;
     width: 100%;
     background: #e1e1e1;
     border: 1px solid var(--gray);
@@ -157,6 +160,11 @@
     padding: 10px 15px;
     font-size: 18px;
     color: var(--black);
+    order: 1;
+}
+
+.chat-input input:focus ~ a {
+    display: none;
 }
 
 .chat-input > i {
