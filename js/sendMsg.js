@@ -24,7 +24,6 @@ function sendMsg() {
 
             msg_container.appendChild(span1);
             msgInput.value = "";
-            msgInput.focus();
         }
     });
 }
