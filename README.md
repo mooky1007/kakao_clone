@@ -18,8 +18,8 @@
 ## To do list(js)
 
 -   [ ] friend page => to do list page
--   [ ] index => if LS have username, redirect friend page.
--   [ ] index page, login => savs LS user name
+-   [x] index => if LS have username, redirect friend page.
+-   [x] index page, login => savs LS user name
 -   [ ] chats page prevent
 
 ### test?

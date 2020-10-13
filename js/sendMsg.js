@@ -2,7 +2,12 @@ function sendMsg() {
     const msg_container = document.querySelector(".js-chat__container");
     const msgInput = document.querySelector(".js-input");
     const msgBtn = document.querySelector(".js-msgBtn");
-    msgBtn.addEventListener("click", function () {
+    msgBtn.addEventListener("click", function (e) {
+        e.preventDefault;
+        submitEvent();
+    });
+
+    function submitEvent(){
         if (msgInput.value) {
             const span1 = document.createElement("span");
             const div1 = document.createElement("div");
@@ -24,8 +29,7 @@ function sendMsg() {
 
             msg_container.appendChild(span1);
             msgInput.value = "";
-        }
-    });
-}
-
+        };
+    };
+};
 sendMsg();

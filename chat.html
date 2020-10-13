@@ -63,13 +63,15 @@
                 </span>
             </div>
         </main>
-        <form class="chat-input">
-            <input type="text" placeholder="Input message" class="js-input" />
+        <form class="chat-input" method="GET">
+            <input type="text" placeholder="Input message" class="js-input" required />
             <a href="#" class="chat-input__options-btn">
                 <i class="far fa-plus-square"></i>
             </a>
             <i class="far fa-smile-wink"></i>
-            <i class="fas fa-arrow-up js-msgBtn"></i>
+            <button type="submit" class="js-msgBtn">
+                <i class="fas fa-arrow-up"></i>
+            </button>
         </form>
         <div class="mobile-view">
             <i class="far fa-sad-tear"></i>

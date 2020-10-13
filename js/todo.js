@@ -9,6 +9,13 @@ const closeBtn = document.getElementsByClassName('js-close-modal');
 const hide = 'hide_modal';
 const myStorage = window.localStorage;
 const todoLS = myStorage.getItem('todo');
+const userName = document.querySelector('.js-user-name');
+
+if(myStorage.getItem('username')){
+    userName.innerText = myStorage.getItem('username');
+}else{
+    userName.innerText = '???';
+}
 
 function LS(){
     if(todoLS){
