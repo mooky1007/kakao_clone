@@ -3,9 +3,13 @@ function sendMsg() {
     const msgInput = document.querySelector(".js-input");
     const msgBtn = document.querySelector(".js-msgBtn");
     msgBtn.addEventListener("click", function (e) {
-        e.preventDefault;
+        e.preventDefault();
         submitEvent();
     });
+
+    msgBtn.addEventListener("keydown",function(e){
+        e.preventDefault();
+    })
 
     function submitEvent(){
         if (msgInput.value) {
@@ -26,7 +30,7 @@ function sendMsg() {
             div1.appendChild(div2);
             div2.appendChild(span2);
             div2.appendChild(span3);
-
+            window.scrollTo(0,window.innerHeight);
             msg_container.appendChild(span1);
             msgInput.value = "";
         };

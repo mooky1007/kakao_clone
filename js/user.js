@@ -3,7 +3,6 @@ function init(){
     const userSubmit = document.querySelector('.js-user-submit');
 
     userSubmit.addEventListener('click',function(event){
-        event.preventDefault;
         if(userInput.value){
             window.localStorage.setItem('username',userInput.value);
         }
