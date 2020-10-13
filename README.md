@@ -20,7 +20,7 @@
 -   [ ] friend page => to do list page
 -   [x] index => if LS have username, redirect friend page.
 -   [x] index page, login => savs LS user name
--   [ ] chats page prevent
+-   [x] chats page prevent
 
 ### test?
 
