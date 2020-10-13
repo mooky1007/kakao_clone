@@ -1,78 +1,89 @@
 .user_component {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .user_component,
 .user_component__column {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
 }
 
 .user_component__column:last-child {
-  justify-content: flex-end;
-  font-size: 12px;
-  gap: 5px;
-  padding: 0 10px;
-  color: var(--gray);
+    justify-content: flex-end;
+    font-size: 12px;
+    gap: 5px;
+    padding: 0 10px;
+    color: var(--gray);
 }
 
 .user_component__img {
-  width: 70px;
-  height: 70px;
-  border-radius: 45%;
+    width: 70px;
+    height: 70px;
+    border-radius: 45%;
 }
 
 .user_component__img--xl {
-  width: 60px;
-  height: 60px;
+    width: 60px;
+    height: 60px;
 }
 
 .user_component__img--xs {
-  width: 45px;
-  height: 45px;
+    width: 45px;
+    height: 45px;
 }
 
 .user_component__text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.todo-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.todo-box input:checked ~ .user_component__title {
+    color: var(--gray);
+    text-decoration: line-through;
 }
 
 .user_component__title {
-  font-weight: 600;
-  font-size: 14px;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .user_component__desc {
-  display: flex;
-  align-content: center;
-  gap: 5px;
-  font-size: 12px;
-  margin-top: 5px;
-  color: var(--gray);
+    display: flex;
+    align-content: center;
+    gap: 5px;
+    font-size: 12px;
+    margin-top: 5px;
+    color: var(--gray);
 }
 
 .user_component__desc i {
-  color: tomato;
+    color: tomato;
 }
 
 .user_component__right {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
 }
 
 .user_component__note {
-  background: tomato;
-  border-radius: 50%;
-  color: #fff;
-  width: 15px;
-  height: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background: tomato;
+    border-radius: 50%;
+    color: #fff;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

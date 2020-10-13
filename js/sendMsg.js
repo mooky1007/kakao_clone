@@ -4,11 +4,11 @@ function sendMsg() {
     const msgBtn = document.querySelector(".js-msgBtn");
     msgBtn.addEventListener("click", function () {
         if (msgInput.value) {
-            let span1 = document.createElement("span");
-            let div1 = document.createElement("div");
-            let div2 = document.createElement("div");
-            let span2 = document.createElement("span");
-            let span3 = document.createElement("span");
+            const span1 = document.createElement("span");
+            const div1 = document.createElement("div");
+            const div2 = document.createElement("div");
+            const span2 = document.createElement("span");
+            const span3 = document.createElement("span");
             span1.classList = "chat-msg--right";
             div1.classList = "chat-msg__column";
             div2.classList = "chat-msg__text";

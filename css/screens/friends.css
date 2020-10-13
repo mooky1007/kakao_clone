@@ -14,6 +14,25 @@
     color: var(--gray);
 }
 
+@keyframes lookatme {
+    from {
+        transform: none;
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    to {
+        transform: none;
+    }
+}
+
+.friends-display i:first-child {
+    color: tomato;
+    will-change: transform;
+    animation: lookatme 0.8s ease-in-out infinite;
+    outline: none;
+}
+
 .friends-screen__channels {
     margin-top: 20px;
     border-top: 1px solid var(--light-gray);
@@ -26,7 +45,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .friends-screen__channels-header i {
