@@ -88,3 +88,8 @@
   color: #333;
   font-size: 14px;
 }
+
+.modal-desc {
+  text-align: center;
+  margin-bottom: 30px;
+}
