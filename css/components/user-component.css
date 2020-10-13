@@ -87,3 +87,27 @@
     justify-content: center;
     align-items: center;
 }
+
+.user_component__label {
+    width: 14px;
+    height: 14px;
+    border: 1px solid var(--light-gray);
+    border-radius: 50%;
+    position: relative;
+}
+
+.user_component__text input[type="checkbox"] {
+    display: none;
+}
+
+.user_component__text input[type="checkbox"]:checked + .user_component__label::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: var(--gray);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}

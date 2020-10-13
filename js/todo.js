@@ -45,6 +45,7 @@ function makeTodo(text){
     const div4 = document.createElement('div');
     const input = document.createElement('input');
     const label = document.createElement('label');
+    const h4 = document.createElement('h4');
     const i = document.createElement('i');
     
     div1.classList.add('user_component','js-todo-list');
@@ -53,14 +54,16 @@ function makeTodo(text){
     div3.classList.add('user_component__text');
     div4.classList.add('todo-box');
     input.setAttribute('type',"checkbox");
-    input.id = 'todoID'
-    label.classList.add('user_component__title');
-    label.setAttribute('for','todoID')
-    label.innerText = text;
+    input.id = "todoID";
+    label.setAttribute('for',"todoID");
+    label.classList.add('user_component__label')
+    h4.classList.add('user_component__title');
+    h4.innerText = text;
     i.classList.add('far','fa-times-circle','js-delet-btn');
 
     div4.appendChild(input);
     div4.appendChild(label);
+    div4.appendChild(h4);
     div3.appendChild(div4);
     div2.appendChild(div3);
     div1.appendChild(div2);
