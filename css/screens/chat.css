@@ -8,10 +8,21 @@
     background: rgb(179, 200, 216);
 }
 
+.chat_screen .status-bar {
+    position: fixed;
+}
+
+.chat_screen .main_screen {
+    position: relative;
+    top: 100px;
+}
+
 .chat_screen .alt-screen-header {
-    position: sticky;
+    position: fixed;
     top: 24px;
     z-index: 999;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .chat__container {
