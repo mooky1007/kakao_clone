@@ -21,5 +21,7 @@
 -   [ ] index => if LS have username, redirect friend page.
 -   [ ] index page, login => savs LS user name
 -   [ ] chats page prevent
-        test?
+
+### test?
+
 -   [ ] chat=> LS save data loading. (save)
