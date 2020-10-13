@@ -9,6 +9,9 @@
 }
 
 .modal-container {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,10 +32,6 @@
     border-radius: 5px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    -webkit-border-radius: ;
-    -moz-border-radius: ;
-    -ms-border-radius: ;
-    -o-border-radius: ;
 }
 
 .modal__header {

@@ -36,7 +36,7 @@
 
         <a class="friends-display js-todo-btn" href="#">
             <i class="fas fa-info-circle"></i>
-            <span>Make To do</span>
+            <span>Make a To do</span>
             <i class="fas fa-chevron-right fa-xs"></i>
         </a>
 
@@ -51,23 +51,9 @@
                 </div>
                 <div class="user_component__column"></div>
             </div>
-            <div class="friends-screen__channels">
+            <div class="friends-screen__channels js-todo-container">
                 <div class="friends-screen__channels-header">
                     <span>To Do List</span>
-                    <i class="fas fa-chevron-up fa-xs"></i>
-                </div>
-                <div class="user_component">
-                    <div class="user_component__column">
-                        <img src="https://d1telmomo28umc.cloudfront.net/media/public/avatars/mooky1007-1602116011.jpg" class="user_component__img user_component__img--xs" />
-                        <div class="user_component__text">
-                            <h4 class="user_component__title">Mooky</h4>
-                            <!--<span class="user_component__desc">some text</span>-->
-                        </div>
-                    </div>
-                    <div class="user_component__column">
-                        <span>2</span>
-                        <i class="fas fa-chevron-right fa-xs"></i>
-                    </div>
                 </div>
             </div>
         </main>
@@ -94,8 +80,8 @@
                     <i class="far fa-times-circle js-close-modal"></i>
                 </div>
                 <form>
-                    <input type="text" placeholder="What do you Today?"/>
-                    <input type="submit" value="Save To Do"/>
+                    <input type="text" placeholder="What do you Today?" class="js-todo-input" />
+                    <input type="submit" value="Save To Do" class="js-todo-submit" />
                 </form>
             </div>
             <div class="black-overlay js-close-modal"></div>
@@ -104,7 +90,7 @@
             <i class="far fa-sad-tear"></i>
             <span>Screen is too big<br />Please resize screen</span>
         </div>
-        <script src="js/modal.js"></script>
+        <script src="js/todo.js"></script>
         <script src="js/clock.js"></script>
     </body>
 </html>
