@@ -24,7 +24,7 @@
         </div>
 
         <header class="screen-header">
-            <h1 class="screen-header__title">Friends</h1>
+            <h1 class="screen-header__title">Today</h1>
             <div class="screen-header__icon">
                 <span><i class="fas fa-search"></i></span>
                 <span><i class="fas fa-music"></i></span>
@@ -34,9 +34,9 @@
             </div>
         </header>
 
-        <a class="friends-display">
+        <a class="friends-display js-todo-btn" href="#">
             <i class="fas fa-info-circle"></i>
-            <span>Friend's Names Display</span>
+            <span>Make To do</span>
             <i class="fas fa-chevron-right fa-xs"></i>
         </a>
 
@@ -53,7 +53,7 @@
             </div>
             <div class="friends-screen__channels">
                 <div class="friends-screen__channels-header">
-                    <span>Channel</span>
+                    <span>To Do List</span>
                     <i class="fas fa-chevron-up fa-xs"></i>
                 </div>
                 <div class="user_component">
@@ -71,7 +71,6 @@
                 </div>
             </div>
         </main>
-
         <nav class="bottom-nav">
             <ul class="bottom-nav__ul">
                 <li class="bottom-nav__li">
@@ -88,10 +87,24 @@
                 </li>
             </ul>
         </nav>
+        <div class="modal-container hide_modal" id="modal">
+            <div class="modal">
+                <div class="modal__header">
+                    <span>Create To Do List</span>
+                    <i class="far fa-times-circle js-close-modal"></i>
+                </div>
+                <form>
+                    <input type="text" placeholder="What do you Today?"/>
+                    <input type="submit" value="Save To Do"/>
+                </form>
+            </div>
+            <div class="black-overlay js-close-modal"></div>
+        </div>
         <div class="mobile-view">
             <i class="far fa-sad-tear"></i>
             <span>Screen is too big<br />Please resize screen</span>
         </div>
+        <script src="js/modal.js"></script>
         <script src="js/clock.js"></script>
     </body>
 </html>
